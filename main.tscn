@@ -1,6 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bpghugysvb5tp"]
+[gd_scene load_steps=12 format=3 uid="uid://bpghugysvb5tp"]
 
 [ext_resource type="Texture2D" uid="uid://6kvcoxrgvtwb" path="res://addons/AllSkyFree/Skyboxes/AllSkyFree_Sky_DeepDusk_Equirect.png" id="1_buecn"]
+[ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="2_3nbtu"]
+[ext_resource type="Resource" path="res://terrain_data/data.hterrain" id="3_pj7wp"]
+[ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="4_j254o"]
+[ext_resource type="Texture2D" uid="uid://c15xhk5cj0gpo" path="res://textures_out/slot0_albedo_bump.png" id="5_eeujl"]
+[ext_resource type="Texture2D" uid="uid://bnu2uoq61ltub" path="res://textures_out/slot0_normal_roughness.png" id="6_skq76"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_ga6jy"]
 panorama = ExtResource("1_buecn")
@@ -18,6 +23,11 @@ tonemap_mode = 2
 
 [sub_resource type="BoxMesh" id="BoxMesh_lgm7m"]
 
+[sub_resource type="Resource" id="Resource_138xp"]
+script = ExtResource("4_j254o")
+mode = 0
+textures = [[ExtResource("5_eeujl")], [ExtResource("6_skq76")]]
+
 [node name="Main" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -28,3 +38,23 @@ transform = Transform3D(0.76998, -0.318049, 0.553151, 0, 0.866915, 0.498456, -0.
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_lgm7m")
+
+[node name="HTerrain" type="Node3D" parent="."]
+script = ExtResource("2_3nbtu")
+centered = true
+_terrain_data = ExtResource("3_pj7wp")
+chunk_size = 32
+collision_enabled = true
+collision_layer = 1
+collision_mask = 1
+shader_type = "Classic4Lite"
+custom_shader = null
+custom_globalmap_shader = null
+texture_set = SubResource("Resource_138xp")
+render_layers = 1
+cast_shadow = 1
+shader_params/u_ground_uv_scale = 20
+shader_params/u_depth_blending = true
+shader_params/u_triplanar = false
+shader_params/u_tile_reduction = Vector4(0, 0, 0, 0)
+shader_params/u_specular = 0.5
