@@ -1,6 +1,30 @@
-[gd_scene format=3 uid="uid://bpghugysvb5tp"]
+[gd_scene load_steps=6 format=3 uid="uid://bpghugysvb5tp"]
+
+[ext_resource type="Texture2D" uid="uid://6kvcoxrgvtwb" path="res://addons/AllSkyFree/Skyboxes/AllSkyFree_Sky_DeepDusk_Equirect.png" id="1_buecn"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_ga6jy"]
+panorama = ExtResource("1_buecn")
+
+[sub_resource type="Sky" id="Sky_m1cnb"]
+sky_material = SubResource("PanoramaSkyMaterial_ga6jy")
+
+[sub_resource type="Environment" id="Environment_dpxxi"]
+background_mode = 2
+sky = SubResource("Sky_m1cnb")
+sky_rotation = Vector3(0, 3.14159, 0)
+ambient_light_source = 2
+ambient_light_color = Color(0.253621, 0.15476, 0.321422, 1)
+tonemap_mode = 2
+
+[sub_resource type="BoxMesh" id="BoxMesh_lgm7m"]
 
 [node name="Main" type="Node3D"]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_dpxxi")
+
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.76998, -0.318049, 0.553151, 0, 0.866915, 0.498456, -0.638068, -0.383801, 0.667507, 6.42773, 5.79216, 7.75657)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_lgm7m")
