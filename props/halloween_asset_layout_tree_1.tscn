@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsggr8ernuqpw"]
+
+[ext_resource type="ArrayMesh" uid="uid://bs76fersn4w5q" path="res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Tree 1.res" id="1_7tm3m"]
+
+[node name="HalloweenAssetLayoutTree1" type="MeshInstance3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+mesh = ExtResource("1_7tm3m")
+skeleton = NodePath("../HTerrain/ProtonScatter")

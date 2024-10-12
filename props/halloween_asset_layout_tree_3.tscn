@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwuhslfx5uh5w"]
+
+[ext_resource type="ArrayMesh" uid="uid://q4qtq4wy3wa2" path="res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Tree 3.res" id="1_7wmqg"]
+
+[node name="HalloweenAssetLayoutTree3" type="MeshInstance3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+mesh = ExtResource("1_7wmqg")
