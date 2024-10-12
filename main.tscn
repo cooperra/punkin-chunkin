@@ -37,9 +37,11 @@ environment = SubResource("Environment_dpxxi")
 transform = Transform3D(0.76998, -0.318049, 0.553151, 0, 0.866915, 0.498456, -0.638068, -0.383801, 0.667507, 6.42773, 5.79216, 7.75657)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09605, 0)
 mesh = SubResource("BoxMesh_lgm7m")
 
 [node name="HTerrain" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 script = ExtResource("2_3nbtu")
 centered = true
 _terrain_data = ExtResource("3_pj7wp")
