@@ -1,0 +1,657 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bs3vkrij66kb6"
+path="res://.godot/imported/Mourning Manor - Halloween Asset Layout.blend-96d7070e8dcad4d756b5606336f92cb3.scn"
+
+[deps]
+
+source_file="res://Mourning Manor - Halloween Asset Layout.blend"
+dest_files=["res://.godot/imported/Mourning Manor - Halloween Asset Layout.blend-96d7070e8dcad4d756b5606336f92cb3.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"meshes": {
+"Mourning Manor - Halloween Asset Layout_Candle Base 1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Candle Base 1.res"
+},
+"Mourning Manor - Halloween Asset Layout_Candle Base 2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Candle Base 2.res"
+},
+"Mourning Manor - Halloween Asset Layout_Cat Mesh": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Cat Mesh.res"
+},
+"Mourning Manor - Halloween Asset Layout_Cloud 1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Cloud 1.res"
+},
+"Mourning Manor - Halloween Asset Layout_Cloud 2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Cloud 2.res"
+},
+"Mourning Manor - Halloween Asset Layout_Cloud 3": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Cloud 3.res"
+},
+"Mourning Manor - Halloween Asset Layout_Cloud 4": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Cloud 4.res"
+},
+"Mourning Manor - Halloween Asset Layout_Cloud 5": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Cloud 5.res"
+},
+"Mourning Manor - Halloween Asset Layout_Fence 1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Fence 1.res"
+},
+"Mourning Manor - Halloween Asset Layout_Fence 2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Fence 2.res"
+},
+"Mourning Manor - Halloween Asset Layout_Glow Behind Door": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Glow Behind Door.res"
+},
+"Mourning Manor - Halloween Asset Layout_Grass 1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Grass 1.res"
+},
+"Mourning Manor - Halloween Asset Layout_Grass 2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Grass 2.res"
+},
+"Mourning Manor - Halloween Asset Layout_Grave 1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Grave 1.res"
+},
+"Mourning Manor - Halloween Asset Layout_Grave 2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Grave 2.res"
+},
+"Mourning Manor - Halloween Asset Layout_Grave 3": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Grave 3.res"
+},
+"Mourning Manor - Halloween Asset Layout_Grave 4": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Grave 4.res"
+},
+"Mourning Manor - Halloween Asset Layout_Ground": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Ground.res"
+},
+"Mourning Manor - Halloween Asset Layout_House Complete 1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_House Complete 1.res"
+},
+"Mourning Manor - Halloween Asset Layout_House Complete 2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_House Complete 2.res"
+},
+"Mourning Manor - Halloween Asset Layout_House Piece 1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_House Piece 1.res"
+},
+"Mourning Manor - Halloween Asset Layout_House Piece 2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_House Piece 2.res"
+},
+"Mourning Manor - Halloween Asset Layout_House Piece 4": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_House Piece 4.res"
+},
+"Mourning Manor - Halloween Asset Layout_House Piece 5": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_House Piece 5.res"
+},
+"Mourning Manor - Halloween Asset Layout_House Piece 6": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_House Piece 6.res"
+},
+"Mourning Manor - Halloween Asset Layout_House Strut Single": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_House Strut Single.res"
+},
+"Mourning Manor - Halloween Asset Layout_House Strut Triple": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_House Strut Triple.res"
+},
+"Mourning Manor - Halloween Asset Layout_Jack-o-lantern 1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Jack-o-lantern 1.res"
+},
+"Mourning Manor - Halloween Asset Layout_Jack-o-lantern 2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Jack-o-lantern 2.res"
+},
+"Mourning Manor - Halloween Asset Layout_Path 1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Path 1.res"
+},
+"Mourning Manor - Halloween Asset Layout_Path 2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Path 2.res"
+},
+"Mourning Manor - Halloween Asset Layout_Pumpkin": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Pumpkin.res"
+},
+"Mourning Manor - Halloween Asset Layout_Pumpkin Stem 1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Pumpkin Stem 1.res"
+},
+"Mourning Manor - Halloween Asset Layout_Pumpkin Stem 2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Pumpkin Stem 2.res"
+},
+"Mourning Manor - Halloween Asset Layout_Rock 1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Rock 1.res"
+},
+"Mourning Manor - Halloween Asset Layout_Rock 10": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Rock 10.res"
+},
+"Mourning Manor - Halloween Asset Layout_Rock 11": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Rock 11.res"
+},
+"Mourning Manor - Halloween Asset Layout_Rock 12": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Rock 12.res"
+},
+"Mourning Manor - Halloween Asset Layout_Rock 13": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Rock 13.res"
+},
+"Mourning Manor - Halloween Asset Layout_Rock 2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Rock 2.res"
+},
+"Mourning Manor - Halloween Asset Layout_Rock 3": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Rock 3.res"
+},
+"Mourning Manor - Halloween Asset Layout_Rock 4": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Rock 4.res"
+},
+"Mourning Manor - Halloween Asset Layout_Rock 5": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Rock 5.res"
+},
+"Mourning Manor - Halloween Asset Layout_Rock 6": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Rock 6.res"
+},
+"Mourning Manor - Halloween Asset Layout_Rock 7": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Rock 7.res"
+},
+"Mourning Manor - Halloween Asset Layout_Rock 8": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Rock 8.res"
+},
+"Mourning Manor - Halloween Asset Layout_Rock 9": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Rock 9.res"
+},
+"Mourning Manor - Halloween Asset Layout_Stone Base": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Stone Base.res"
+},
+"Mourning Manor - Halloween Asset Layout_Stone Chimney": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Stone Chimney.res"
+},
+"Mourning Manor - Halloween Asset Layout_Stone Stairs": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Stone Stairs.res"
+},
+"Mourning Manor - Halloween Asset Layout_Tree 1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Tree 1.res"
+},
+"Mourning Manor - Halloween Asset Layout_Tree 2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Tree 2.res"
+},
+"Mourning Manor - Halloween Asset Layout_Tree 3": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Tree 3.res"
+},
+"Mourning Manor - Halloween Asset Layout_Tree Branch 1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Tree Branch 1.res"
+},
+"Mourning Manor - Halloween Asset Layout_Tree Branch 2": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Tree Branch 2.res"
+},
+"Mourning Manor - Halloween Asset Layout_Window 1 Dark": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Window 1 Dark.res"
+},
+"Mourning Manor - Halloween Asset Layout_Window 1 Lit": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Window 1 Lit.res"
+},
+"Mourning Manor - Halloween Asset Layout_Window 2 Dark": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Window 2 Dark.res"
+},
+"Mourning Manor - Halloween Asset Layout_Window 2 Lit": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Window 2 Lit.res"
+},
+"Mourning Manor - Halloween Asset Layout_Window 3 Dark": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Window 3 Dark.res"
+},
+"Mourning Manor - Halloween Asset Layout_Window 3 Lit": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Window 3 Lit.res"
+},
+"Mourning Manor - Halloween Asset Layout_Window 4 Dark": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Window 4 Dark.res"
+},
+"Mourning Manor - Halloween Asset Layout_Window 4 Lit": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Window 4 Lit.res"
+},
+"Mourning Manor - Halloween Asset Layout_Window 5 Dark": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Window 5 Dark.res"
+},
+"Mourning Manor - Halloween Asset Layout_Window 5 Lit": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Window 5 Lit.res"
+},
+"Mourning Manor - Halloween Asset Layout_Window 6 Dark": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Window 6 Dark.res"
+},
+"Mourning Manor - Halloween Asset Layout_Window 6 Lit": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Window 6 Lit.res"
+}
+}
+}
+blender/nodes/visible=0
+blender/nodes/active_collection_only=false
+blender/nodes/punctual_lights=true
+blender/nodes/cameras=true
+blender/nodes/custom_properties=true
+blender/nodes/modifiers=1
+blender/meshes/colors=false
+blender/meshes/uvs=true
+blender/meshes/normals=true
+blender/meshes/tangents=true
+blender/meshes/skins=2
+blender/meshes/export_bones_deforming_mesh_only=false
+blender/materials/unpack_enabled=true
+blender/materials/export_materials=1
+blender/animation/limit_playback=true
+blender/animation/always_sample=true
+blender/animation/group_tracks=true
