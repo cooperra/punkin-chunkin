@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bv26tssrfnw44"]
+
+[ext_resource type="PackedScene" uid="uid://bmx00aedm4gyo" path="res://Simple_Fantasy/Fbx/SF_Veh_Goblin_Mangonel_01.fbx" id="1_ylx5n"]
+
+[node name="SF_Veh_Goblin_Mangonel_01" instance=ExtResource("1_ylx5n")]

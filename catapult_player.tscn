@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4vnl26st0scf"]
+
+[ext_resource type="PackedScene" uid="uid://bv26tssrfnw44" path="res://catapult.tscn" id="1_mp6gk"]
+
+[node name="CatapultPlayer" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.967268, 0.253758, 0, -0.253758, 0.967268, 0, 4.692, 10.063)
+
+[node name="SF_Veh_Goblin_Mangonel_01" parent="." instance=ExtResource("1_mp6gk")]
