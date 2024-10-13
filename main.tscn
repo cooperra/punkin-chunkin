@@ -1,6 +1,7 @@
-[gd_scene load_steps=53 format=3 uid="uid://bpghugysvb5tp"]
+[gd_scene load_steps=54 format=3 uid="uid://bpghugysvb5tp"]
 
 [ext_resource type="Texture2D" uid="uid://6kvcoxrgvtwb" path="res://addons/AllSkyFree/Skyboxes/AllSkyFree_Sky_DeepDusk_Equirect.png" id="1_buecn"]
+[ext_resource type="PackedScene" uid="uid://cvaljro0notgg" path="res://touch_ui.tscn" id="1_cydre"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="2_3nbtu"]
 [ext_resource type="Resource" path="res://terrain_data/data.hterrain" id="3_pj7wp"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="4_j254o"]
@@ -282,6 +283,8 @@ script = ExtResource("16_rca8u")
 radius = 150.0
 
 [node name="Main" type="Node3D"]
+
+[node name="TouchUI" parent="." instance=ExtResource("1_cydre")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_dpxxi")

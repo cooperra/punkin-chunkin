@@ -1,0 +1,83 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvaljro0notgg"]
+
+[sub_resource type="GDScript" id="GDScript_4kelr"]
+resource_name = "ActionButton"
+script/source = "extends ReferenceRect
+
+@export var action_name: StringName
+@export var as_event: bool = false
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+
+func _gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		if as_event:
+			_dispatch_event(event)
+		else:
+			_do_action(event)
+		accept_event()
+	if event is InputEventScreenTouch:
+		if as_event:
+			_dispatch_event(event)
+		else:
+			_do_action(event)
+		accept_event()
+		print(name, event)
+
+
+func _do_action(event: InputEvent):
+	if event.is_pressed():
+		Input.action_press(action_name)
+	else:
+		Input.action_release(action_name)
+
+
+func _dispatch_event(event: InputEvent):
+	var action_event = InputEventAction.new()
+	action_event.action = action_name
+	action_event.pressed = event.is_pressed()
+	Input.parse_input_event(action_event)
+"
+
+[node name="TouchUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+script = SubResource("GDScript_4kelr")
+action_name = &"ui_left"
+
+[node name="ReferenceRect2" type="ReferenceRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+script = SubResource("GDScript_4kelr")
+action_name = &"ui_accept"
+as_event = true
+
+[node name="ReferenceRect3" type="ReferenceRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+script = SubResource("GDScript_4kelr")
+action_name = &"ui_right"
