@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2mj5vyase2el"]
+
+[ext_resource type="ArrayMesh" uid="uid://ctegvd0fpqxq6" path="res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Jack-o-lantern 1.res" id="1_r0nop"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_2uni2"]
+radius = 0.2
+
+[node name="Pumpkin" type="RigidBody3D"]
+
+[node name="MeshAnchor" type="Node3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="MourningManor-HalloweenAssetLayoutJack-o-lantern1" type="MeshInstance3D" parent="MeshAnchor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.787212, 0)
+mesh = ExtResource("1_r0nop")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_2uni2")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+light_color = Color(1, 0.46928, 0.219613, 1)

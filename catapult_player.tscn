@@ -1,10 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://c4vnl26st0scf"]
+[gd_scene load_steps=3 format=3 uid="uid://c4vnl26st0scf"]
 
+[ext_resource type="Script" path="res://catapult_player.gd" id="1_7gb6n"]
 [ext_resource type="PackedScene" uid="uid://bv26tssrfnw44" path="res://catapult.tscn" id="1_mp6gk"]
 
 [node name="CatapultPlayer" type="Node3D"]
+script = ExtResource("1_7gb6n")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.967268, 0.253758, 0, -0.253758, 0.967268, 0, 4.692, 10.063)
+transform = Transform3D(-1, 2.21842e-08, -8.45612e-08, 0, 0.967268, 0.253758, 8.74228e-08, 0.253758, -0.967268, 0, 4.692, -10.063)
 
 [node name="SF_Veh_Goblin_Mangonel_01" parent="." instance=ExtResource("1_mp6gk")]
+
+[node name="LaunchPoint" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.844973, 0.53481, 0, -0.53481, 0.844973, 0, 1.42586, -0.279236)
