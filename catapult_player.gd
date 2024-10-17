@@ -2,6 +2,9 @@ extends Node3D
 
 @export var projectile_scene: PackedScene = preload("res://pumpkin.tscn")
 @export var impulse = 25.0
+@export var input_enabled: bool = true:
+	get(): return is_processing_unhandled_input()
+	set(value): set_process_unhandled_input(value)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -28,3 +31,9 @@ func _on_launch():
 	var root = get_tree().root
 	root.add_child(projectile)
 	projectile.apply_central_impulse($LaunchPoint.global_basis.z * impulse)
+
+	# Camera stuff here
+	# get current camera (attach script) (check if it's cool enough also)
+	# set target to projectile
+
+	# and I guess we'd need a way to get the camera to return home, but that's the whole point of making a second one.

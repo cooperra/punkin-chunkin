@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cap0ejhfqdniw"]
+
+[ext_resource type="Script" path="res://chase_camera_3d.gd" id="1_cmphg"]
+
+[node name="ChaseCamera3D" type="Camera3D"]
+script = ExtResource("1_cmphg")
