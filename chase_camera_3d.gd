@@ -18,9 +18,10 @@ func _process(delta: float) -> void:
 		return
 	look_at(target.global_position)
 	# Our -Z axis is now facing the target
+	var direction_to_target = -global_basis.z.normalized()
 	global_position += current_velocity * delta
 	var current_distance: float = global_position.distance_to(target.global_position)
 	if current_distance > distance:
-		current_velocity += global_basis.z.normalized() * acceleration * delta
+		current_velocity += direction_to_target * acceleration * delta
 	elif current_distance < distance:
-		current_velocity -= global_basis.z.normalized() * deceleration * delta
+		current_velocity -= direction_to_target * deceleration * delta
