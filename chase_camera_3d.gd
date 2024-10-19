@@ -2,8 +2,8 @@ extends Camera3D
 
 @export var target: Node3D
 @export var distance: float = 10
-@export var acceleration: float = 10
-@export var deceleration: float = 30
+@export var acceleration: float = 100
+@export var deceleration: float = 100
 # global
 @export var current_velocity: Vector3 = Vector3.ZERO
 
