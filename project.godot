@@ -24,6 +24,13 @@ window/size/borderless=true
 
 pointing/emulate_mouse_from_touch=false
 
+[layer_names]
+
+3d_physics/layer_1="normal"
+3d_physics/layer_2="terrain"
+3d_physics/layer_3="projectile"
+3d_physics/layer_4="camera"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
