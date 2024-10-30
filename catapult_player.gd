@@ -6,6 +6,21 @@ extends Node3D
 	get(): return is_processing_unhandled_input()
 	set(value): set_process_unhandled_input(value)
 
+enum PlayerState {
+	AIMING,
+	LAUNCHING,
+}
+var state: PlayerState = PlayerState.AIMING:
+	set(value):
+		state = value
+		match state:
+			PlayerState.AIMING:
+				set_process_unhandled_input(true)
+				set_physics_process(true)
+			PlayerState.LAUNCHING:
+				set_process_unhandled_input(false)
+				set_physics_process(false)
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -26,6 +41,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _on_launch():
+	state = PlayerState.LAUNCHING
 	var projectile: RigidBody3D = projectile_scene.instantiate()
 	projectile.position = $LaunchPoint.position
 	var root: Node = get_tree().root
@@ -55,6 +71,7 @@ func deploy_chase_camera(target: Node3D) -> void:
 func deploy_rb_camera(target: Node3D, impulse) -> void:
 	var root = get_tree().root
 	var rb_camera = preload("res://rigid_body_camera_3d.tscn").instantiate()
+	rb_camera.tree_exited.connect(func (): state = PlayerState.AIMING, CONNECT_ONE_SHOT)
 	root.add_child(rb_camera)
 	rb_camera.transform = target.transform
 	rb_camera.target = target

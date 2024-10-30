@@ -1,6 +1,10 @@
 extends RigidBody3D
 
-@export var target: Node3D
+@export var target: Node3D:
+	set(value):
+		target = value
+		if target != null and target.has_signal("on_impact") and not target.on_impact.is_connected(on_target_impact):
+			target.on_impact.connect(on_target_impact, CONNECT_ONE_SHOT)
 #@export var distance: float = 10
 #@export var acceleration: float = 100
 #@export var deceleration: float = 100
@@ -10,7 +14,7 @@ extends RigidBody3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	set_process_unhandled_input(false)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -39,3 +43,18 @@ func apply_delayed_impulse(impulse: Vector3, delay: float):
 
 func close_camera_distance(duration: float):
 	camera.create_tween().tween_property(camera, "position", Vector3.ZERO, duration)
+
+func on_target_impact():
+	freeze = true
+	await get_tree().create_timer(2).timeout
+	#skippable_phase_started.emit()
+	set_process_unhandled_input(true)
+	await get_tree().create_timer(5).timeout
+	finish()
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_accept"):
+		finish()
+
+func finish():
+	queue_free()
