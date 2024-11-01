@@ -8,6 +8,7 @@ radius = 0.2
 
 [node name="Pumpkin" type="RigidBody3D"]
 collision_layer = 5
+continuous_cd = true
 script = ExtResource("1_dweiv")
 
 [node name="MeshAnchor" type="Node3D" parent="."]
