@@ -79,7 +79,7 @@ func on_target_impact():
 	finish()
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("ui_accept"):
+	if event.is_action_pressed("launch") or event.get_action_strength("aim_left") == 1 or event.get_action_strength("aim_right") == 1 or event.get_action_strength("aim_up") == 1 or event.get_action_strength("aim_down") == 1:
 		finish()
 
 func finish():

@@ -67,17 +67,17 @@ grow_vertical = 2
 layout_mode = 2
 size_flags_horizontal = 3
 script = SubResource("GDScript_4kelr")
-action_name = &"ui_left"
+action_name = &"aim_left"
 
 [node name="ReferenceRect2" type="ReferenceRect" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 script = SubResource("GDScript_4kelr")
-action_name = &"ui_accept"
+action_name = &"launch"
 as_event = true
 
 [node name="ReferenceRect3" type="ReferenceRect" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 script = SubResource("GDScript_4kelr")
-action_name = &"ui_right"
+action_name = &"aim_right"

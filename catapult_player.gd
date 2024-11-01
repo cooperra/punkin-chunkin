@@ -29,14 +29,14 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	var turn_speed = 0.4
-	var rot_input = -Input.get_axis("ui_left", "ui_right")
+	var rot_input = -Input.get_axis("aim_left", "aim_right")
 	rotate_y(rot_input * turn_speed * delta)
 
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("ui_accept"):
+	if event.is_action_pressed("launch"):
 		_on_launch()
-	if event.is_action_pressed("ui_cancel"):
+	if event.is_action_pressed("quit"):
 		get_tree().quit()
 
 
