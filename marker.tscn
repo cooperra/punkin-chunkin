@@ -10,6 +10,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.251461, 0)
 billboard = 1
 double_sided = false
 no_depth_test = true
+modulate = Color(1, 0.588235, 0.121569, 1)
+outline_modulate = Color(0.428343, 0.0506367, 0.00393791, 1)
 text = "marker"
 font_size = 64
 
@@ -18,4 +20,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0788218, 0)
 billboard = 1
 double_sided = false
 no_depth_test = true
+modulate = Color(1, 0.588235, 0.121569, 1)
+outline_modulate = Color(0.428343, 0.0506367, 0.00393791, 1)
 text = "."
