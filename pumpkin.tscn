@@ -1,11 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://d2mj5vyase2el"]
+[gd_scene load_steps=4 format=3 uid="uid://d2mj5vyase2el"]
 
+[ext_resource type="Script" path="res://projectile.gd" id="1_dweiv"]
 [ext_resource type="ArrayMesh" uid="uid://ctegvd0fpqxq6" path="res://Mourning Manor/Mourning Manor - Halloween Asset Layout_Jack-o-lantern 1.res" id="1_r0nop"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_2uni2"]
 radius = 0.2
 
 [node name="Pumpkin" type="RigidBody3D"]
+collision_layer = 5
+script = ExtResource("1_dweiv")
 
 [node name="MeshAnchor" type="Node3D" parent="."]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
