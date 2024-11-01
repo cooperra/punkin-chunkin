@@ -6,6 +6,10 @@ extends Node3D
 	get(): return is_processing_unhandled_input()
 	set(value): set_process_unhandled_input(value)
 
+@onready var vert_aim_value: float = -$LaunchPoint.rotation_degrees.x
+@onready var vert_aim_starting_value: float = -$LaunchPoint.rotation_degrees.x
+@onready var camera_starting_pitch: float = $Camera3D.rotation_degrees.x
+
 enum PlayerState {
 	AIMING,
 	LAUNCHING,
@@ -30,8 +34,24 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	var turn_speed = 0.4
 	var rot_input = -Input.get_axis("aim_left", "aim_right")
-	rotate_y(rot_input * turn_speed * delta)
-
+	if rot_input != 0:
+		rotate_y(rot_input * turn_speed * delta)
+	# Skip vertical input if we're turning
+	if rot_input != 0:
+		return
+	# We're doing a wonky thing where vert_aim_value goes from 0 to 80,
+	# but the actual rotation goes from 0 to -80 degrees.
+	var vert_aim_max = 80
+	var vert_aim_min = 0
+	var vert_turn_speed = 0.3 * vert_aim_max
+	var vert_input = Input.get_axis("aim_down", "aim_up")
+	if vert_input == 0:
+		return
+	vert_aim_value += vert_input * vert_turn_speed * delta
+	vert_aim_value = clampf(vert_aim_value, vert_aim_min, vert_aim_max)
+	$LaunchPoint.rotation_degrees.x = -vert_aim_value
+	# And camera is technically facing the opposite direction of our aim.
+	$Camera3D.rotation_degrees.x = 0.3 * (vert_aim_value - vert_aim_starting_value) + camera_starting_pitch
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("launch"):
