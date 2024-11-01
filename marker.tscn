@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://bi20a3fau0ea4"]
+
+[ext_resource type="Script" path="res://marker.gd" id="1_85ya4"]
+
+[node name="Marker" type="Node3D"]
+script = ExtResource("1_85ya4")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.251461, 0)
+billboard = 1
+double_sided = false
+no_depth_test = true
+text = "marker"
+font_size = 64
+
+[node name="Label3D2" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0788218, 0)
+billboard = 1
+double_sided = false
+no_depth_test = true
+text = "."
