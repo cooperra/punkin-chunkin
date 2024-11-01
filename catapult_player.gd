@@ -21,6 +21,13 @@ var state: PlayerState = PlayerState.AIMING:
 			PlayerState.AIMING:
 				set_process_unhandled_input(true)
 				set_physics_process(true)
+				if not is_node_ready():
+					return
+				# Reset aim to keep the game from being too easy
+				var random_aim_window = 20  # degrees
+				var random_nudge = randf() * random_aim_window - random_aim_window / 2
+				vert_aim_value = vert_aim_starting_value + random_nudge
+				update_aim()
 			PlayerState.LAUNCHING:
 				set_process_unhandled_input(false)
 				set_physics_process(false)
@@ -49,8 +56,11 @@ func _physics_process(delta: float) -> void:
 		return
 	vert_aim_value += vert_input * vert_turn_speed * delta
 	vert_aim_value = clampf(vert_aim_value, vert_aim_min, vert_aim_max)
+	update_aim()
+
+func update_aim():
 	$LaunchPoint.rotation_degrees.x = -vert_aim_value
-	# And camera is technically facing the opposite direction of our aim.
+	# Camera is technically facing the opposite direction of our aim.
 	$Camera3D.rotation_degrees.x = 0.3 * (vert_aim_value - vert_aim_starting_value) + camera_starting_pitch
 
 func _unhandled_input(event: InputEvent) -> void:
