@@ -26,7 +26,7 @@ func _process(delta: float) -> void:
 	update_woosh_audio()
 
 func track_target():
-	if not target:
+	if not is_instance_valid(target):
 		return
 	camera.look_at(target.global_position)
 
@@ -58,6 +58,8 @@ func update_woosh_audio():
 func delayed_launch(impulse: Vector3, launch_delay: float, camera_tween_duration: float):
 	apply_delayed_impulse(impulse, launch_delay)
 	close_camera_distance(camera_tween_duration)
+	# Start failsafe timeout
+	get_tree().create_timer(45 + launch_delay).timeout.connect(finish)
 
 func apply_delayed_impulse(impulse: Vector3, delay: float):
 	freeze = true
