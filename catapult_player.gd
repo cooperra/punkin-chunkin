@@ -1,7 +1,7 @@
 extends Node3D
 
 @export var projectile_scene: PackedScene = preload("res://pumpkin.tscn")
-@export var impulse_magnitude = 25.0
+@export var impulse_magnitude = 30.0
 @export var input_enabled: bool = true:
 	get(): return is_processing_unhandled_input()
 	set(value): set_process_unhandled_input(value)
