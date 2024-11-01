@@ -41,3 +41,5 @@ func place_marker(marker_global_position):
 	marker.global_position = marker_global_position
 	marker.origin_position = original_position
 	get_tree().get_root().add_child(marker)
+	# Hack to make the marker go away when the camera resets
+	get_viewport().get_camera_3d().tree_exited.connect(marker.queue_free)
