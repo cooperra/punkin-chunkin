@@ -66,8 +66,8 @@ func update_aim():
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("launch"):
 		_on_launch()
-	if event.is_action_pressed("quit"):
-		get_tree().quit()
+	#if event.is_action_pressed("quit"):
+	#	get_tree().quit()
 
 
 func _on_launch():
