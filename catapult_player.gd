@@ -78,6 +78,12 @@ func _on_launch():
 	root.add_child(projectile)
 	var impulse: Vector3 = $LaunchPoint.global_basis.z * impulse_magnitude
 	projectile.apply_central_impulse(impulse)
+	# Randomize initial rotation
+	projectile.rotation = Vector3(randf() * 2 * PI, randf() * 2 * PI, randf() * 2 * PI)
+	# Randomize spin a little
+	var spin_magnitude: float = randf() * PI / 2
+	var spin_direction: Vector3 = Vector3(randf(), randf(), randf()).normalized()
+	projectile.angular_velocity = spin_magnitude * spin_direction
 	deploy_rb_camera(projectile, impulse)
 
 func deploy_rb_camera(target: Node3D, impulse) -> void:
