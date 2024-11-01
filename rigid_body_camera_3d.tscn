@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://qbj47j5doaxk"]
+[gd_scene load_steps=4 format=3 uid="uid://qbj47j5doaxk"]
 
 [ext_resource type="Script" path="res://rigid_body_camera_3d.gd" id="1_un8b7"]
+[ext_resource type="AudioStream" uid="uid://dh3b1glvkv1so" path="res://sounds/airwoosh.wav" id="2_c5358"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_lyokd"]
 radius = 0.2
@@ -15,3 +16,7 @@ unique_name_in_owner = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_lyokd")
+
+[node name="WindSoundPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("2_c5358")
