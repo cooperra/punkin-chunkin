@@ -50,15 +50,6 @@ func _on_launch():
 	projectile.apply_central_impulse(impulse)
 	deploy_rb_camera(projectile, impulse)
 
-func deploy_chase_camera(target: Node3D) -> void:
-	var root = get_tree().root
-	var chase_camera = preload("res://chase_camera_3d.tscn").instantiate()
-	chase_camera.position = $Camera3D.global_position
-	chase_camera.basis = $Camera3D.global_basis
-	chase_camera.make_current()
-	chase_camera.target = target
-	root.add_child(chase_camera)
-
 func deploy_rb_camera(target: Node3D, impulse) -> void:
 	var root = get_tree().root
 	var rb_camera = preload("res://rigid_body_camera_3d.tscn").instantiate()
