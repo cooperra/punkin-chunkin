@@ -48,15 +48,6 @@ func _on_launch():
 	root.add_child(projectile)
 	var impulse: Vector3 = $LaunchPoint.global_basis.z * impulse_magnitude
 	projectile.apply_central_impulse(impulse)
-
-	# Camera stuff here
-	# get current camera (attach script) (check if it's cool enough also)
-	# set target to projectile
-
-	# and I guess we'd need a way to get the camera to return home, but that's the whole point of making a second one.
-
-	# Ignore all that above
-	#deploy_chase_camera(projectile)
 	deploy_rb_camera(projectile, impulse)
 
 func deploy_chase_camera(target: Node3D) -> void:
